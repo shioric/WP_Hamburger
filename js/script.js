@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function($){
   $(".l-header__menu").on("click", function () {
     $(".c-cover").toggleClass("active");
     $(".l-sidebar").toggleClass("active");
