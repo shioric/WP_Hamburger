@@ -27,10 +27,10 @@
       <!-- ヘッダー -->
       <header class="l-header">
         <div class="l-header__inner">
-          <h1 class="l-header__title"><?php bloginfo( 'name' ); ?></h1>
-          <!-- <h1 class="l-header__title">
-        <a href="<?php echo esc_url(home_url('/'));?>"><?php bloginfo('name');?></a>
-      </h1> -->
+          <!-- <h1 class="l-header__title"><?php bloginfo( 'name' ); ?></h1> -->
+          <h1 class="l-header__title">
+            <a href="<?php echo esc_url(home_url('/'));?>"><?php bloginfo('name');?></a>
+          </h1>
           <?php get_search_form(); ?>
         </div> <!-- /inner -->
         <button class="l-header__menu">Menu</button>
