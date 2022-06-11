@@ -88,7 +88,7 @@
 
       &--prev a::before {
         content: '';
-        background: url(../../../img/icon-prev.png) no-repeat center center/auto 100%;
+        background: url(./../img/icon-prev.png) no-repeat center center/auto 100%;
         width: 16px;
         height: 16px;
         display: inline-block;
@@ -99,7 +99,7 @@
 
       &--next a::after {
         content: '';
-        background: url(../../../img/icon-next.png) no-repeat center center / auto 100%;
+        background: url(./../img/icon-next.png) no-repeat center center / auto 100%;
         width: 16px;
         height: 16px;
         display: inline-block;

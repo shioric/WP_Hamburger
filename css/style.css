@@ -101,7 +101,7 @@ body {
 .l-footer {
   color: #FFFFFF;
   font-family: "M PLUS 1p", sans-serif;
-  background: url(../../../img/footer-sp.png) no-repeat center center;
+  background: url(./../img/footer-sp.png) no-repeat center center;
   background-size: cover;
   min-width: 375px;
   min-height: 150px;
@@ -112,12 +112,12 @@ body {
 }
 @media screen and (min-width: 600px) {
   .l-footer {
-    background-image: url(../../../img/footer-tab.png);
+    background-image: url(./../img/footer-tab.png);
   }
 }
 @media screen and (min-width: 1025px) {
   .l-footer {
-    background-image: url(../../../img/footer-pc.png);
+    background-image: url(./../img/footer-pc.png);
     grid-row: 2/3;
     grid-column: 1/3;
   }
@@ -183,6 +183,10 @@ body {
     margin-bottom: 0;
     margin-left: 65px;
   }
+}
+.l-header__title a {
+  text-decoration: none;
+  color: #707070;
 }
 .l-header__menu {
   position: absolute;
@@ -448,17 +452,17 @@ body {
 .p-access__inner {
   width: 100%;
   height: 100%;
-  background: url(../../../img/map-sp.png) center no-repeat;
+  background: url(./../img/map-sp.png) center no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 600px) {
   .p-access__inner {
-    background: url(../../../img/map-tab.png);
+    background: url(./../img/map-tab.png);
   }
 }
 @media screen and (min-width: 1025px) {
   .p-access__inner {
-    background: url(../../../img/map-pc.png);
+    background: url(./../img/map-pc.png);
   }
 }
 .p-access__contents {
@@ -567,19 +571,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
-  background-image: url("../../../img/kv-archive-sp.png");
+  background-image: url("./../img/kv-archive-sp.png");
 }
 @media screen and (min-width: 600px) {
   .p-archiveKv {
     align-items: center;
     flex-direction: inherit;
-    background-image: url("../../../img/kv-archive-tab.png");
+    background-image: url("./../img/kv-archive-tab.png");
   }
 }
 @media screen and (min-width: 1025px) {
   .p-archiveKv {
     height: 239px;
-    background-image: url("../../../img/kv-archive-pc.png");
+    background-image: url("./../img/kv-archive-pc.png");
   }
 }
 .p-archiveKv__title {
@@ -897,7 +901,7 @@ body {
   /* アイコンの横幅 */
   height: 24px;
   /* アイコンの高さ */
-  background: url(../../img/search-icon.png) no-repeat center center/auto 100%;
+  background: url(./../img/search-icon.png) no-repeat center center/auto 100%;
   /* 背景にアイコン画像を配置 */
   display: inline-block;
   /* 高さを持たせるためにインラインブロック要素にする */
@@ -1017,7 +1021,7 @@ body {
   height: 285px;
   width: 100%;
   min-width: 375px;
-  background-image: url(../../img/keyVisual-sp.jpg);
+  background-image: url(./../img/keyVisual-sp.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1093,7 +1097,7 @@ body {
   height: 225px;
   width: 100%;
   min-width: 375px;
-  background-image: url(../../img/shop-sp.jpg);
+  background-image: url(./../img/shop-sp.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1103,12 +1107,12 @@ body {
 @media screen and (min-width: 600px) {
   .p-pageKv {
     height: 500px;
-    background-image: url(../../img/shop-tab.jpg);
+    background-image: url(./../img/shop-tab.jpg);
   }
 }
 @media screen and (min-width: 1025px) {
   .p-pageKv {
-    background-image: url(../../img/shop-pc.jpg);
+    background-image: url(./../img/shop-pc.jpg);
   }
 }
 .p-pageKv__title {
@@ -1220,7 +1224,7 @@ body {
 }
 .p-pagination__list-item--prev a::before {
   content: "";
-  background: url(../../../img/icon-prev.png) no-repeat center center/auto 100%;
+  background: url(./../img/icon-prev.png) no-repeat center center/auto 100%;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1230,7 +1234,7 @@ body {
 }
 .p-pagination__list-item--next a::after {
   content: "";
-  background: url(../../../img/icon-next.png) no-repeat center center/auto 100%;
+  background: url(./../img/icon-next.png) no-repeat center center/auto 100%;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -1269,7 +1273,7 @@ body {
   }
 }
 .p-service__menu--takeout {
-  background-image: url(../../../img/takeout-pc.jpg);
+  background-image: url(./../img/takeout-pc.jpg);
   margin-bottom: 20px;
   background-size: cover;
   background-position: center center;
@@ -1287,7 +1291,7 @@ body {
   }
 }
 .p-service__menu--eatin {
-  background-image: url(../../../img/eatin-pc.jpg);
+  background-image: url(./../img/eatin-pc.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1628,7 +1632,7 @@ body {
   height: 225px;
   width: 100%;
   min-width: 375px;
-  background-image: url(../../img/singleKv-sp.jpg);
+  background-image: url(./../img/singleKv-sp.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1638,12 +1642,12 @@ body {
 @media screen and (min-width: 600px) {
   .p-singleKv {
     height: 500px;
-    background-image: url(../../img/singleKv-tab.jpg);
+    background-image: url(./../img/singleKv-tab.jpg);
   }
 }
 @media screen and (min-width: 1025px) {
   .p-singleKv {
-    background-image: url(../../img/singleKv-pc.jpg);
+    background-image: url(./../img/singleKv-pc.jpg);
   }
 }
 .p-singleKv__title {

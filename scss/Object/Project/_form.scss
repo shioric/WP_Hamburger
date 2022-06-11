@@ -3,7 +3,8 @@
 @use "../../Foundation/font" as f;
 
 .p-form {
-  display: inline-block;  /* なくても大丈夫だけど、念の為 */
+  display: inline-block;
+  /* なくても大丈夫だけど、念の為 */
   position: relative;
 
   @include m.mq(pc) {
@@ -14,13 +15,20 @@
 
   /* 基準値とする */
   &::before {
-    content: "";  /* 疑似要素に必須 */
-    width: 24px;  /* アイコンの横幅 */
-    height: 24px;  /* アイコンの高さ */
-    background: url(../../img/search-icon.png) no-repeat center center / auto 100%;  /* 背景にアイコン画像を配置 */
-    display: inline-block;  /* 高さを持たせるためにインラインブロック要素にする */
-    position: absolute;  /* 相対位置に指定 */
-    left: 16px;  /* アイコンの位置 */
+    content: "";
+    /* 疑似要素に必須 */
+    width: 24px;
+    /* アイコンの横幅 */
+    height: 24px;
+    /* アイコンの高さ */
+    background: url(../img/search-icon.png) no-repeat center center / auto 100%;
+    /* 背景にアイコン画像を配置 */
+    display: inline-block;
+    /* 高さを持たせるためにインラインブロック要素にする */
+    position: absolute;
+    /* 相対位置に指定 */
+    left: 16px;
+    /* アイコンの位置 */
     transform: translateY(-50%);
     top: 50%;
   }
@@ -28,13 +36,15 @@
   &__input {
     width: 230px;
     height: 46px;
-    padding: 3px 0 3px 3em; 
+    padding: 3px 0 3px 3em;
     margin-right: 13px;
     border: 1px solid c.$c-base;
     border-radius: 10px;
+
     @include m.mq(tab) {
       width: 396px;
     }
+
     @include m.mq(pc) {
       width: 20.6vw;
     }
@@ -55,6 +65,7 @@
     @include m.mq(tab) {
       width: 136px;
     }
+
     @include m.mq(pc) {
       width: 7vw;
     }

@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Hamburger</title>
-  <meta name="description" content="ハンバーガーサイト">
-  <!-- リセットcss -->
-  <link rel="stylesheet" href="https://github.com/filipelinhares/ress.git">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- フォント -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap"
-    rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <!-- css -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <div class="c-grid">
-    <div class="l-contents">
-      <!-- ヘッダー -->
-      <header class="l-header">
-        <div class="l-header__inner">
-          <h1 class="l-header__title">Hamburger</h1>
-          <form class="p-form" method="get" action="#">
-            <input type="text" class="p-form__input">
-            <input type="submit" class="p-form__submit" value="検索">
-          </form>
-        </div> <!-- /inner -->
-        <button class="l-header__menu">Menu</button>
-      </header> <!-- /header -->
+<?php get_header(); ?>
 
       <!-- メインコンテンツエリア -->
       <main class="l-main__wrapper">
@@ -45,7 +10,18 @@
           </section> <!-- /keyVisual -->
 
           <div class="c-container--more">
-            <article class="p-single-desc">
+
+          <?php if(have_posts()): while(have_posts()): the_post(); ?>
+            <div id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+              <?php the_content(); ?>
+            </div>
+          <?php endwhile;
+          else:
+          ?>
+          <p>表示する記事がありません</p>
+          <?php endif; ?>
+
+            <!-- <article class="p-single-desc">
               <h2 class="p-single-desc__title">見出しh2</h2>
               <p class="p-single-desc__text">
                 Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
@@ -179,63 +155,12 @@
 
             <button class="c-button-single">ボタン</button>
 
-            <p class="c-text-bold">boldboldboldboldboldboldbold</p>
+            <p class="c-text-bold">boldboldboldboldboldboldbold</p> -->
           </div>
         </article>
       </main>
     </div>
-    <!-- サイドバー -->
-    <aside class="l-sidebar p-sidebar">
-      <h2 class="p-sidebar__menu">Menu</h2>
-      <button class="p-sidebar__close c-close">
-        <span class="c-close--line1">閉じるボタン</span>
-        <span class="c-close--line2">閉じるボタン</span>
-      </button>
-      <h3 class="p-sidebar__unit"><a href="#"></a>バーガー</h3>
-      <ul class="p-sidebar__list">
-        <li>ハンバーガー</li>
-        <li>チーズバーガー</li>
-        <li>テリヤキバーガー</li>
-        <li>アボカドバーガー</li>
-        <li>フィッシュバーガー</li>
-        <li>ベーコンバーガー</li>
-        <li>チキンバーガー</li>
-      </ul>
-      <h3 class="p-sidebar__unit"><a href="#"></a>サイド</h3>
-      <ul class="p-sidebar__list">
-        <li>ポテト</li>
-        <li>サラダ</li>
-        <li>ナゲット</li>
-        <li>コーン</li>
-      </ul>
-      <h3 class="p-sidebar__unit"><a href="#"></a>ドリンク</h3>
-      <ul class="p-sidebar__list">
-        <li>コーラ</li>
-        <li>ファンタ</li>
-        <li>オレンジ</li>
-        <li>アップル</li>
-        <li>紅茶（Ice/Hot）</li>
-        <li>コーヒー（Ice/Hot）</li>
-      </ul>
-    </aside>
 
-    <!-- フッター -->
-    <footer class="l-footer">
-      <ul class="l-footer__ul">
-        <li class="l-footer__li"><a href="#">ショップ情報</a></li>
-        <span class="l-footer__ul--partition c-partition"></span>
-        <li class="l-footer__li"><a href="#">ヒストリー</a></li>
-      </ul>
-      <div class="l-footer__copy">Copyright: RaiseTech</div>
-    </footer>
-
-  </div>
-  <div class="c-cover"></div>
-  <!--jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
-
-
-</body>
-
-</html>
+    <?php get_sidebar(); ?>
+<div class="c-cover"></div>
+<?php get_footer(); ?>

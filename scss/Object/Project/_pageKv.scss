@@ -6,7 +6,7 @@
   height: 225px;
   width: 100%;
   min-width: 375px;
-  background-image: url(../../img/shop-sp.jpg);
+  background-image: url(../img/shop-sp.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -14,10 +14,10 @@
   position: relative;
   @include m.mq(tab) {
     height: 500px;
-    background-image: url(../../img/shop-tab.jpg);
+    background-image: url(../img/shop-tab.jpg);
   }
   @include m.mq(pc) {
-    background-image: url(../../img/shop-pc.jpg);
+    background-image: url(../img/shop-pc.jpg);
   }
 
   &__title {

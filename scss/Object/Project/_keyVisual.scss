@@ -6,12 +6,14 @@
   height: 285px;
   width: 100%;
   min-width: 375px;
-  background-image: url(../../img/keyVisual-sp.jpg);
+  background-image: url(../img/keyVisual-sp.jpg);
+  // background-image: url(../../../img/keyVisual-sp.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   position: relative;
+
   @include m.mq(pc) {
     height: 530px;
   }
@@ -23,6 +25,7 @@
     position: absolute;
     left: 25px;
     @include f.fsz(36, 54);
+
     @include m.mq(pc) {
       font-size: 2.08vw;
     }

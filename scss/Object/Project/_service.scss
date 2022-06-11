@@ -18,12 +18,14 @@
     margin: 20px 0 0 0;
     width: 100%;
     min-height: 642px;
+
     @include m.mq(tab) {
       min-height: 681px;
       // width: calc((100% - 40px) / 2);
       width: calc(100% / 2);
       margin: 40px 0 0 40px;
     }
+
     @include m.mq(pc) {
       min-height: 1193px;
       // width: 32.5vw;
@@ -32,22 +34,24 @@
     }
 
     &--takeout {
-      background-image: url(../../../img/takeout-pc.jpg);
+      background-image: url(./../img/takeout-pc.jpg);
       margin-bottom: 20px;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
+
       @include m.mq(tab) {
         margin-right: 40px;
         margin-bottom: 0;
       }
+
       @include m.mq(pc) {
         margin-right: 80px;
       }
     }
 
     &--eatin {
-      background-image: url(../../../img/eatin-pc.jpg);
+      background-image: url(./../img/eatin-pc.jpg);
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -61,10 +65,12 @@
     flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
+
     @include m.mq(tab) {
       min-height: 100%;
       width: 42.8vw;
     }
+
     @include m.mq(pc) {
       width: 32.5vw;
     }
@@ -83,6 +89,7 @@
       padding-top: 13px;
       padding-left: 12px;
     }
+
     @include m.mq(pc) {
       font-size: 4.1vw;
       padding-top: 22px;
@@ -113,10 +120,12 @@
     @include m.mq(tab) {
       padding-top: 46%;
     }
+
     @include m.mq(pc) {
       padding-top: 67.5%;
     }
   }
+
   &__box {
     width: auto;
     min-height: 163px;
@@ -130,6 +139,7 @@
     @include m.mq(tab) {
       min-height: 172px;
     }
+
     @include m.mq(pc) {
       min-height: 174px;
       margin: 0 20px 20px 20px;
@@ -137,25 +147,27 @@
   }
 
   &__title {
-    @include f.fsz(22,33);
+    @include f.fsz(22, 33);
     padding-top: 19px;
     padding-left: 10px;
     padding-bottom: 19px;
+
     @include m.mq(tab) {
-      @include f.fsz(24,36);
+      @include f.fsz(24, 36);
       padding-top: 20px;
       padding-bottom: 20px;
       padding-left: 11px;
     }
+
     @include m.mq(pc) {
       padding-top: 17px;
       padding-bottom: 26px;
-      padding-left:10px;
+      padding-left: 10px;
     }
   }
 
   &__text {
-    @include f.fsz(16,23);
+    @include f.fsz(16, 23);
     font-weight: normal;
     padding: 0 14px 23px 10px;
 

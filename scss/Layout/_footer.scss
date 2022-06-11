@@ -5,7 +5,7 @@
 .l-footer {
   color: c.$c-accent;
   font-family: f.$font-M1;
-  background: url(../../../img/footer-sp.png) no-repeat center center;
+  background: url(../img/footer-sp.png) no-repeat center center;
   background-size: cover;
   min-width: 375px;
   min-height: 150px;
@@ -15,11 +15,11 @@
   flex-direction: column;
 
   @include m.mq(tab) {
-    background-image: url(../../../img/footer-tab.png);
+    background-image: url(../img/footer-tab.png);
   }
 
   @include m.mq(pc) {
-    background-image: url(../../../img/footer-pc.png);
+    background-image: url(../img/footer-pc.png);
     grid-row: 2/3;
     grid-column: 1/3;
 

@@ -1,6 +1,6 @@
-@use "../Foundation/mixin"as m;
-@use "../Foundation/color"as c;
-@use "../Foundation/font"as f;
+@use "../Foundation/mixin" as m;
+@use "../Foundation/color" as c;
+@use "../Foundation/font" as f;
 
 .l-header {
   display: flex;
@@ -12,6 +12,7 @@
   background-color: #FFF7EF;
   position: relative;
   grid-column: 1/2;
+
   // @include m.mq(tab) {
   //   min-width: 600px;
   // }
@@ -26,6 +27,7 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+
     @include m.mq(pc) {
       display: flex;
       align-items: center;
@@ -39,6 +41,7 @@
     color: c.$c-base;
     margin-bottom: 38px;
     @include f.fsz(40, 53);
+
     @include m.mq(pc) {
       font-size: 3.3vw;
       margin-bottom: 0;
@@ -47,6 +50,7 @@
 
     a {
       text-decoration: none;
+      color: c.$c-base;
     }
   }
 
@@ -62,17 +66,19 @@
     font-weight: bold;
     font-family: f.$font-Roboto;
     @include f.fsz(20, 26);
+
     @include m.mq(tab) {
-      @include f.fsz(34,45);
+      @include f.fsz(34, 45);
       top: 18px;
       right: 26px;
     }
+
     @include m.mq(pc) {
       display: none;
     }
 
     &.active {
-        display: none;
+      display: none;
     }
   }
 }

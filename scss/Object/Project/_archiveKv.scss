@@ -12,15 +12,15 @@
   background-repeat: no-repeat;
   // background-position: center;
   background-color: #000000;
-  background-image: url("../../../img/kv-archive-sp.png");
+  background-image: url("../img/kv-archive-sp.png");
   @include m.mq(tab) {
     align-items: center;
     flex-direction: inherit;
-    background-image: url("../../../img/kv-archive-tab.png");
+    background-image: url("../img/kv-archive-tab.png");
   }
   @include m.mq(pc) {
     height: 239px;
-    background-image: url("../../../img/kv-archive-pc.png");
+    background-image: url("../img/kv-archive-pc.png");
   }
 
   &__title {

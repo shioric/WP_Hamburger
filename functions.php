@@ -15,6 +15,32 @@
     }
   add_filter( 'pre_get_document_title', 'WP_Hamburger_title' );
 
+  //sidebar
+  function WP_Hamburger_widgets_init() {
+    register_sidebar (
+      array (
+        'name'          => 'All Menu',
+        'id'            => 'menu_widget',
+        'description'   => 'メニューの一覧です',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="c-category-title">',
+        'after_title'   => "</h2>\n",
+      )
+    );
+  }
+  add_action( 'widgets_init', 'WP_Hamburger_widgets_init');
+
+  //ナビゲーションメニューを複数設定する
+  function register_WP_Hamburger_menus() {
+    register_nav_menus(array(
+      'side-menu' => 'SideMenu',
+      'footer-menu' => 'FooterMenu',
+    ));
+  }
+  add_action( 'after_setup_theme','register_WP_Hamburger_menus');
+
+
   //style,script出力
   function WP_Hamburger_script() {
     wp_enqueue_style( 'google-font-common', '//fonts.googleapis.com', array() );
