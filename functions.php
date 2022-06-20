@@ -1,15 +1,15 @@
 <?php
   //テーマサポート
-  add_theme_support('title-tag'); //<title>タグを出力する
-  add_theme_support('post-thumbnails'); //アイキャッチ画像を出力する
-  add_theme_support('menus');
+  add_theme_support( 'title-tag' ); //<title>タグを出力する
+  add_theme_support( 'post-thumbnails' ); //アイキャッチ画像を出力する
+  add_theme_support( 'menus' );
 
   //タイトル出力
   function WP_Hamburger_title( $title ) {
     if ( is_front_page() && is_home() ) { //表示されたページがフロントページかつメインページなら
       $title = get_bloginfo( 'name', 'display' ); //タイトルはブログのサイト名を表示
     } elseif ( is_singular() ) { //表示されたページが個別投稿ページなら
-      $title = single_post_title( '',false ); //タイトルは投稿記事のタイトルを表示
+      $title = single_post_title( '', false ); //タイトルは投稿記事のタイトルを表示
     }
     return $title;
     }
@@ -30,6 +30,7 @@
     );
   }
   add_action( 'widgets_init', 'WP_Hamburger_widgets_init');
+
 
   //ナビゲーションメニューを複数設定する
   function register_WP_Hamburger_menus() {

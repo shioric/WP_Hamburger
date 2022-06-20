@@ -1,30 +1,51 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="ja">
 
-  <!-- メインコンテンツエリア -->
-  <main class="l-main__wrapper">
-    <article class="p-single-main">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hamburger</title>
+  <meta name="description" content="ハンバーガーサイト">
+  <!-- リセットcss -->
+  <link rel="stylesheet" href="https://github.com/filipelinhares/ress.git">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      <!-- keyVisual -->
-      <section class="p-pageKv">
-        <h2 class="p-pageKv__title">ショップについて</h2>
-      </section> <!-- /keyVisual -->
+<body>
+  <div class="c-grid">
+    <div class="l-contents">
+      <!-- ヘッダー -->
+      <header class="l-header">
+        <div class="l-header__inner">
+          <h1 class="l-header__title">Hamburger</h1>
+          <form class="p-form" method="get" action="#">
+            <input type="text" class="p-form__input">
+            <input type="submit" class="p-form__submit" value="検索">
+          </form>
+        </div> <!-- /inner -->
+        <button class="l-header__menu">Menu</button>
+      </header> <!-- /header -->
 
-      <div class="c-container--more">
-        <div class="p-post">
-          <?php if(have_posts()): //もし投稿データがあったら
-            while(have_posts()): //以下を繰り返す
-            the_post(); ?>
-              <div id="post-<?php the_ID(); ?>"<?php post_class(); ?>> <!-- 投稿に自動でクラスを付与 -->
-                <?php the_content(); ?> <!-- 投稿があるときに表示させる内容はこれ -->
-              </div>
-          <?php endwhile; //繰り返しはここまで。まだデータが有るときはwhileに戻る
-          else: //投稿がなければ
-          ?>
-          <p>表示する記事がありません</p> <!-- 投稿がないときはこちらを表示 -->
-          <?php endif; ?> <!-- 条件分岐ここまで -->
+      <!-- メインコンテンツエリア -->
+      <main class="l-main__wrapper">
+        <article class="p-single-main">
 
+          <!-- keyVisual -->
+          <section class="p-singleKv">
+            <h2 class="p-singleKv__title">h1 チーズバーガー</h2>
+          </section> <!-- /keyVisual -->
 
-            <!-- <article class="p-single-desc">
+          <div class="c-container--more">
+            <article class="p-single-desc">
               <h2 class="p-single-desc__title">見出しh2</h2>
               <p class="p-single-desc__text">
                 Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
@@ -99,7 +120,7 @@
                 <li>リストリストリスト</li>
                 <li>リストリストリスト</li>
               </ol>
-              <ol class="p-list-ol__second">
+              <ol class="p-list-ol__second" >
                 <li>リスト2リスト2リスト2</li>
                 <li>リスト2リスト2リスト2</li>
               </ol>
@@ -158,14 +179,63 @@
 
             <button class="c-button-single">ボタン</button>
 
-            <p class="c-text-bold">boldboldboldboldboldboldbold</p> -->
-        </div>
-      </div>
-    </article>
+            <p class="c-text-bold">boldboldboldboldboldboldbold</p>
+          </div>
+        </article>
+      </main>
+    </div>
+    <!-- サイドバー -->
+    <aside class="l-sidebar p-sidebar">
+      <h2 class="p-sidebar__menu">Menu</h2>
+      <button class="p-sidebar__close c-close">
+        <span class="c-close--line1">閉じるボタン</span>
+        <span class="c-close--line2">閉じるボタン</span>
+      </button>
+      <h3 class="p-sidebar__unit"><a href="#"></a>バーガー</h3>
+      <ul class="p-sidebar__list">
+        <li>ハンバーガー</li>
+        <li>チーズバーガー</li>
+        <li>テリヤキバーガー</li>
+        <li>アボカドバーガー</li>
+        <li>フィッシュバーガー</li>
+        <li>ベーコンバーガー</li>
+        <li>チキンバーガー</li>
+      </ul>
+      <h3 class="p-sidebar__unit"><a href="#"></a>サイド</h3>
+      <ul class="p-sidebar__list">
+        <li>ポテト</li>
+        <li>サラダ</li>
+        <li>ナゲット</li>
+        <li>コーン</li>
+      </ul>
+      <h3 class="p-sidebar__unit"><a href="#"></a>ドリンク</h3>
+      <ul class="p-sidebar__list">
+        <li>コーラ</li>
+        <li>ファンタ</li>
+        <li>オレンジ</li>
+        <li>アップル</li>
+        <li>紅茶（Ice/Hot）</li>
+        <li>コーヒー（Ice/Hot）</li>
+      </ul>
+    </aside>
 
+    <!-- フッター -->
+    <footer class="l-footer">
+      <ul class="l-footer__ul">
+        <li class="l-footer__li"><a href="#">ショップ情報</a></li>
+        <span class="l-footer__ul--partition c-partition"></span>
+        <li class="l-footer__li"><a href="#">ヒストリー</a></li>
+      </ul>
+      <div class="l-footer__copy">Copyright: RaiseTech</div>
+    </footer>
 
-  </main>
   </div>
-<?php get_sidebar(); ?>
-<div class="c-cover"></div>
-<?php get_footer(); ?>
+  <div class="c-cover"></div>
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/color" as c;
+@use "../../Foundation/font" as f;
+
+.p-post {
+  color: c.$c-primary;
+  margin-bottom: 30px;
+  @include m.mq(tab) {
+  margin-bottom: 60px;
+  }
+
+  h2 {
+    font-family: f.$font-M1;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @include f.fsz(28,42);
+    @include m.mq(tab) {
+      margin-bottom: 3.125vw;
+      margin-top: 0;
+      @include f.fsz(36,54);
+    }
+    @include m.mq(pc) {
+      font-size: 1.875vw;
+    }
+  }
+
+  p {
+    padding: 33px 0;
+    font-weight: normal;
+    @include f.fsz(16,23);
+    @include m.mq(pc) {
+      font-size: 0.83vw;
+    }
+  }
+
+  h3 {
+    color: c.$c-primary;
+    font-family: f.$font-M1;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @include f.fsz(24,36);
+    @include m.mq(tab) {
+      margin-bottom: 60px;
+      @include f.fsz(28,42);
+    }
+    @include m.mq(pc) {
+      margin-bottom: 3.125vw;
+      font-size: 1.458vw;
+    }
+  }
+
+  h4 {
+    color: c.$c-primary;
+    font-family: f.$font-M1;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @include f.fsz(20,29);
+    @include m.mq(tab) {
+      margin-bottom: 60px;
+    }
+    @include m.mq(pc) {
+      margin-bottom: 3.125vw;
+      font-size: 1.041vw;
+    }
+  }
+
+  h5 {
+    color: c.$c-primary;
+    font-family: f.$font-M1;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @include f.fsz(20,29);
+    @include m.mq(tab) {
+      margin-bottom: 60px;
+    }
+    @include m.mq(pc) {
+      margin-bottom: 3.125vw;
+      font-size: 1.041vw;
+    }
+  }
+
+  h6 {
+    color: c.$c-primary;
+    font-family: f.$font-M1;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @include f.fsz(20,29);
+    @include m.mq(tab) {
+      margin-bottom: 60px;
+    }
+    @include m.mq(pc) {
+      margin-bottom: 3.125vw;
+      font-size: 1.041vw;
+    }
+  }
+
+  .wp-block-quote {
+    background-color: #F5F5F5;
+    padding: 30px 16px 30px 20px;
+    margin-bottom: 30px;
+    @include m.mq(tab) {
+      padding: 50px 56px 60px 50px;
+      margin-bottom: 60px;
+    }
+    @include m.mq(pc) {
+      padding: 2.6vw 3.125vw 2.6vw 2.6vw;
+      margin-bottom: 3.125vw;
+    }
+
+    p {
+      font-family: f.$font-M1;
+      color: c.$c-primary;
+      margin-bottom: 30px;
+      @include f.fsz(16,23);
+      @include m.mq(pc) {
+        margin-bottom: 3.125vw;
+        font-size: 0.83vw;
+      }
+    }
+
+    &__cite {
+      font-family: f.$font-M1;
+      color: c.$c-primary;
+      @include f.fsz(16,23);
+      @include m.mq(pc) {
+        font-size: 0.83vw;
+      }
+    }
+
+    cite {
+      color: #4A6C9B;
+      text-decoration: underline;
+    }
+  }
+
+
+  .wp-block-media-text {
+    margin-bottom: 30px;
+    @include m.mq(tab) {
+      margin-bottom: 60px;
+    }
+    @include m.mq(pc) {
+      margin-bottom: 3.125vw;
+    }
+
+    .p-column {
+      display: flex;
+      margin-top: 30px;
+      @include m.mq(tab) {
+        margin-top: 117px;
+      }
+      @include m.mq(pc) {
+        margin-top: 3.125vw;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &__media {
+        width: 42.7%;
+        img {
+          width: 100%;
+          vertical-align: bottom;
+        }
+      }
+
+      &__content {
+        flex: 1;
+        margin: 0 0 0 10px;
+        @include m.mq(tab) {
+          margin: 0 0 0 21px;
+        }
+        @include m.mq(pc) {
+          margin: 0 0 0 2.083vw;
+        }
+
+        p {
+          min-height: 89px;
+          min-width: 144px;
+          @include f.fsz(16,23);
+          font-family: f.$font-M1;
+          color: c.$c-primary;
+          @include m.mq(pc) {
+            font-size: 0.83vw;
+          }
+        }
+      }
+    }
+  }
+
+  .wp-block-image {
+    display: block;
+    margin: 0 auto 30px;
+    width: 79.7%;
+    @include m.mq(tab) {
+      margin: 0 auto 241px;
+    }
+    @include m.mq(pc) {
+      margin: 0 auto 3.125vw;
+    }
+  }
+
+  p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: c.$c-primary;
+    font-family: f.$font-M1;
+    @include f.fsz(16,23);
+    @include m.mq(pc) {
+      font-size: 0.83vw;
+    }
+
+    &__first {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__second {
+      margin-left: 38px;
+      margin-bottom: 20px;
+    }
+
+    &__third {
+      margin-left: 20px;
+    }
+  }
+
+  .wp-block-code {
+    background-color: #F5F5F5;
+    color: c.$c-primary;
+    padding: 50px;
+    justify-content: left;
+    margin-bottom: 30px;
+    font-family: f.$font-M1;
+    @include f.fsz(16,23);
+    @include m.mq(tab) {
+      margin-bottom: 60px;
+    }
+    @include m.mq(pc) {
+      margin-bottom: 50px;
+      font-size: 0.83vw;
+    }
+  }
+
+  .wp-block-table {
+    border: solid 1px c.$c-base;
+    border-collapse: collapse;
+    background-color: c.$c-accent;
+    width: 100%;
+    margin-bottom: 30px;
+    color: c.$c-primary;
+    font-family: f.$font-M1;
+    @include f.fsz(16,23);
+    @include m.mq(tab) {
+      margin-bottom: 60px;
+    }
+    @include m.mq(pc) {
+      font-size: 0.83vw;
+    }
+
+    & tr {
+      border: solid 1px c.$c-base;
+      border-collapse: collapse;
+    }
+
+    & td {
+      border: solid 1px c.$c-base;
+      border-collapse: collapse;
+    }
+
+    &__td {
+      // height: 77px;
+      // @include m.mq(pc) {
+      //   height: 4.01vw;
+      // }
+
+      &--first {
+        width: 40%;
+        padding: 28px 0px 27px 30px;
+        @include m.mq(tab) {
+          width: 30%;
+        }
+      }
+
+      &--second {
+        padding: 28px 0px 27px 30px;
+      }
+    }
+  }
+
+  .wp-block-buttons {
+    width: 100%;
+    min-height: 81px;
+    margin-bottom: 30px;
+    background: linear-gradient(#f2ede9, #ded8d3);
+    border-radius: 20px;
+    border: 1px solid c.$c-base;
+    font-family: f.$font-M1;
+    font-weight: bold;
+    color: c.$c-primary;
+    @include f.fsz(16,23);
+    @include m.mq(tab) {
+      width: 429px;
+      height: 104px;
+      margin-bottom: 60px;
+    }
+    @include m.mq(pc) {
+      font-size: 0.83vw;
+    }
+  }
+
+
+}

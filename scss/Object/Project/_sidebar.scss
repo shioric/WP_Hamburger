@@ -1,6 +1,6 @@
-@use "../../Foundation/mixin"as m;
-@use "../../Foundation/color"as c;
-@use "../../Foundation/font"as f;
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/color" as c;
+@use "../../Foundation/font" as f;
 
 .p-sidebar {
   position: fixed;
@@ -51,7 +51,26 @@
     }
   }
 
-  &__unit {
+  .wp-block-categories-list > li a {
+    color: c.$c-base;
+    font-weight: bold;
+    font-family: f.$font-M1;
+    margin-bottom: 40px;
+    text-decoration: none;
+    @include f.fsz(24, 36);
+
+    @include m.mq(pc) {
+      font-size: 1.25vw;
+    }
+  }
+
+  .children {
+    margin-top: 40px;
+  }
+
+  li {
+    margin-left: 20px;
+    margin-bottom: 23px;
     font-weight: bold;
     font-family: f.$font-M1;
     margin-bottom: 40px;
@@ -60,25 +79,33 @@
     @include m.mq(pc) {
       font-size: 1.25vw;
     }
-  }
-
-  &__list {
-    list-style: none;
-    font-weight: normal;
-    font-family: f.$font-M1;
-    @include f.fsz(20, 29);
-
-    @include m.mq(pc) {
-      font-size: 1.04vw;
-    }
-  }
-
-  li {
-    margin-left: 20px;
-    margin-bottom: 23px;
 
     &:last-child {
       margin-bottom: 40px;
+    }
+
+    .cat-item a {
+      font-weight: bold;
+      font-family: f.$font-M1;
+      margin-bottom: 40px;
+      @include f.fsz(24, 36);
+
+      @include m.mq(pc) {
+        font-size: 1.25vw;
+      }
+    }
+
+    .children li a {
+      text-decoration: none;
+      list-style: none;
+      font-weight: normal;
+      font-family: f.$font-M1;
+      color: c.$c-base;
+      @include f.fsz(20, 29);
+
+      @include m.mq(pc) {
+        font-size: 1.04vw;
+      }
     }
   }
 }

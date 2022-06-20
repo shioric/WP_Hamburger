@@ -11,8 +11,8 @@
 
   &__image {
     flex-basis: 50%;
-    height: 300px;
-    @include bp.bp(tab) {
+    height: auto;
+    @include m.mq(tab) {
       height: 500px;
     }
     img{
@@ -49,9 +49,10 @@
     background-color: c.$c-accent-dark;
     color: c.$c-accent;
     font-family: f.$font-M1;
+    height: auto;
     // display: flex;
     // flex-direction: column;
-    min-height: 354px;
+    // min-height: 354px;
     // margin-top: 0;
     padding: 31.5px 73px 43.7px 17px;
     @include m.mq(tab) {
