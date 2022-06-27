@@ -448,6 +448,17 @@ body {
   }
 }
 
+.c-wrap__404error {
+  padding: 50px;
+  text-align: center;
+}
+.c-wrap__404error h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #707070;
+}
+
 .p-access {
   width: 100%;
   height: 100%;
@@ -2094,6 +2105,114 @@ body {
 }
 .p-table__td--second {
   padding: 28px 0px 27px 30px;
+}
+
+.wp-pagenavi {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-top: 120px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi {
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .wp-pagenavi {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+.wp-pagenavi .pages {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi .pages {
+    display: inherit;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #707070;
+    margin-right: 10px;
+    border: none;
+  }
+}
+.wp-pagenavi .previouspostslink {
+  color: #707070;
+  font-weight: bold;
+  border: none;
+}
+.wp-pagenavi .previouspostslink::after {
+  content: "前へ";
+  margin-left: 10px;
+  font-weight: bold;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi .previouspostslink::after {
+    content: none;
+  }
+}
+.wp-pagenavi .nextpostslink {
+  color: #707070;
+  font-weight: bold;
+  border: none;
+}
+.wp-pagenavi .nextpostslink::before {
+  content: "次へ";
+  margin-left: 10px;
+  font-weight: bold;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi .nextpostslink::before {
+    content: none;
+  }
+}
+.wp-pagenavi .page {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi .page {
+    color: #707070;
+    font-weight: bold;
+    display: inline-block;
+    border: solid 0.1px #707070;
+    background-color: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+.wp-pagenavi > .current {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi > .current {
+    display: block;
+    background-color: #3C2B1C;
+    pointer-events: none;
+    color: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    text-align: center;
+    text-decoration: none;
+  }
 }
 
 /*================================

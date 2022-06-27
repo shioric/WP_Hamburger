@@ -37,6 +37,7 @@
 @use "Object/Component/input";
 @use "Object/Component/partition";
 @use "Object/Component/text-bold";
+@use "Object/Component/wrap";
 
 /*================================
 	Project
@@ -62,6 +63,7 @@
 @use "Object/Project/single-heading";
 @use "Object/Project/singleKv";
 @use "Object/Project/table";
+@use "Object/Project/wp-pagenavi";
 /*================================
 	Utility
 =================================*/

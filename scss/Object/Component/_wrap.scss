@@ -1,0 +1,16 @@
+@use "../../Foundation/mixin"as m;
+@use "../../Foundation/color"as c;
+@use "../../Foundation/font"as f;
+
+.c-wrap {
+  &__404error {
+    padding: 50px;
+    text-align: center;
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: normal;
+      color: c.$c-base;
+    }
+  }
+}
