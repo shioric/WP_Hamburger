@@ -1,10 +1,11 @@
 <!-- フッター -->
-<footer class="l-footer">
-  <ul class="l-footer__ul">
-    <li class="l-footer__li"><a href="<?php echo get_page_link(2130); ?>">ショップ情報</a></li>
+<footer class="l-footer p-footer">
+  <?php wp_nav_menu( array('theme_location' => 'footer-menu') ); ?>
+  <!-- <ul class="l-footer__ul">
+    <li class="l-footer__li"><a href="<?php get_permalink(2130); ?>">ショップ情報</a></li>
     <span class="l-footer__ul--partition c-partition"></span>
     <li class="l-footer__li"><a href="<?php echo get_page_link(2126); ?>">ヒストリー</a></li>
-  </ul>
+  </ul> -->
   <div class="l-footer__copy">Copyright: <?php bloginfo('name'); ?> 2022</div>
 </footer>
 

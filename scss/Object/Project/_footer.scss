@@ -1,0 +1,38 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/color" as c;
+@use "../../Foundation/font" as f;
+
+#menu-footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include f.fsz(20,29);
+
+  a {
+    text-decoration: none;
+    color: c.$c-accent;
+  }
+}
+
+#menu-item-2150 {
+  position:relative;
+  display:inline-block;
+  a {
+    margin-right: 15px;
+  }
+}
+
+#menu-item-2150::after {
+  content:"";
+  display:inline-block;
+  width:1px;
+  height:20px;
+  background-color:white;
+  position:absolute;
+  top:5px;
+  right:0px;
+}
+
+#menu-item-2151 {
+  margin-left: 15px;
+}

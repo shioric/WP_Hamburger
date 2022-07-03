@@ -892,6 +892,41 @@ body {
   }
 }
 
+#menu-footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 1.45;
+}
+#menu-footer-menu a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#menu-item-2150 {
+  position: relative;
+  display: inline-block;
+}
+#menu-item-2150 a {
+  margin-right: 15px;
+}
+
+#menu-item-2150::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+
+#menu-item-2151 {
+  margin-left: 15px;
+}
+
 .p-form {
   display: inline-block;
   /* なくても大丈夫だけど、念の為 */
