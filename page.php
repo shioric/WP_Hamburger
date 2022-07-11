@@ -6,7 +6,7 @@
 
       <!-- keyVisual -->
       <section class="p-pageKv">
-        <h2 class="p-pageKv__title">ショップについて</h2>
+        <h2 class="p-pageKv__title"><?php the_title(); ?></h2>
       </section> <!-- /keyVisual -->
 
       <div class="c-container--more">

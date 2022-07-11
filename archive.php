@@ -29,9 +29,7 @@
             </div>
             <div class="p-card__desc">
               <h3 class="p-card__desc--title"><?php the_title(); ?></h3>
-              <?php the_excerpt(); ?>
-              <!-- 抜粋を表示 -->
-              <!-- <a href="<?php the_permalink(); ?>">詳しく見る</a> -->
+              <?php the_excerpt(); ?><!-- 抜粋を表示 -->
               <button class="p-card__desc--button" type="button" onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button>
             </div>
           </article>

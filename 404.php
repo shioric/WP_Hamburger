@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-      <!-- メインコンテンツエリア -->
       <main class="l-main__wrapper">
         <article class="p-main">
           <div class="c-wrap__404error">

@@ -13,11 +13,6 @@
     <div class="c-container">
       <article class="p-archive-desc">
         <h2 class="p-archive-desc__title"><?php echo category_description(); ?></h2>
-        <!-- <h2 class="p-archive-desc__title"><?php single_cat_title(); ?></h2> -->
-        <!-- <p class="p-archive-desc__text">
-          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        </p> -->
-        <!-- <?php get_template_part('components/search'); ?> -->
       </article>
 
       <?php

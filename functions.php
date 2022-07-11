@@ -46,10 +46,6 @@
   function WP_Hamburger_script() {
     wp_enqueue_style('google-font-mplus', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap', array(), '');
     wp_enqueue_style('google-font-roboto', '//fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap', array(), '');
-    // wp_enqueue_style( 'google-font-common', '//fonts.googleapis.com', array() );
-    // wp_enqueue_style( 'google-font-common02', '//fonts.gstatic.com', array() );
-    // wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap', array() );
-    // wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.6.1/css/all.css', array() );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0' );
     wp_enqueue_style( 'reset', '//github.com/filipelinhares/ress.git', array() );
     wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', "", '3.6.0', true );

@@ -4,5 +4,9 @@ Description: 静的サイトからのWordPress化
 Version: 1.0.0
 Theme URI: https://github.com/shioric/WP_Hamburger
 Author: shiori
-Requires PHP: 8.0
+License: テーマのライセンス
+License URI: テーマのライセンスのURI
+Text Domain: テキストドメイン
+Requires PHP: 8.0.0
+Tested up to: 6.0
 */

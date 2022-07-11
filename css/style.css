@@ -1826,7 +1826,7 @@ body {
 }
 @media screen and (min-width: 1025px) {
   .p-service__text {
-    padding: 0 25px 0 19px;
+    padding: 0 25px 25px 19px;
   }
 }
 
