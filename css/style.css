@@ -94,6 +94,10 @@ body {
   overflow-x: hidden;
 }
 
+#wpadminbar {
+  position: fixed;
+}
+
 @media screen and (min-width: 1025px) {
   .l-contents {
     grid-row: 1/2;

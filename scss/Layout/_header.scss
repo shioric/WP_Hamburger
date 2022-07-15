@@ -4,7 +4,6 @@
 
 .l-header {
   display: flex;
-  // flex-flow: column;
   width: 100%;
   height: 217px;
   padding: 40px 0;
@@ -13,9 +12,6 @@
   position: relative;
   grid-column: 1/2;
 
-  // @include m.mq(tab) {
-  //   min-width: 600px;
-  // }
   @include m.mq(pc) {
     text-align: inherit;
     display: flex;
@@ -82,122 +78,3 @@
     }
   }
 }
-
-// .l-header {
-//   display: flex;
-//   flex-flow: column;
-//   width: 100%;
-//   height: 217px;
-//   background-color: #FFF7EF;
-
-//   @include m.mq(pc) {
-//     width: calc(100% - 367px); //sidebarの横幅が367pxのため
-//     padding: 67px 31px 66px 65px;
-//   }
-//   &__inner {
-//     @include m.mq(pc) {
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-between;
-//     }
-//   }
-//   &__title {
-//     text-align: center;
-//     margin-bottom: 38px;
-//     text-decoration: none;
-//     color: c.$c-base;
-//     font-family: f.$font-Roboto;
-//     font-size: 40px;
-//     line-height: 53px;
-//     font-weight: bold;
-
-//     @include m.mq(pc) {
-//       padding: 67px auto 66px 65px;
-//       position: absolute;
-//       font-size: 64px;
-//       line-height: 84px;
-//     }
-//   }
-//   &__search {
-//     width: 100%;
-//     max-width: 545px;
-//     display: flex;
-//     margin: 0 auto; //ブロック要素を中央寄せにする
-
-//     // @include m.mq(pc) {
-//     //   margin: 0;
-//     // }
-
-//     &__input {
-//       position: relative;
-//       flex: 1;
-//       width: 100%;
-//       border-radius: 10px;
-//       border: 1px solid c.$c-base;
-//       padding: 11px 11px 11px 50px;
-//       &::before {
-//         content: "";
-//         position: absolute;
-//         top: 50%;
-//         left: 16px;
-//         transform: translateY(-50%);
-//         display: block;
-//         width: 24px;
-//         height: 24px;
-//         background: url(../../img/search-icon.png) no-repeat center;
-//         background-size: 24px 24px;
-//       }
-//     }
-
-//     &__button {
-//       width: 78px;
-//       padding: 12px 23px;
-//       margin-left: 12px;
-//       color: c.$c-base;
-//       font-size: 16px;
-//       font-family: f.$font-M1;
-//       font-weight: bold;
-//       background-color: c.$c-secondary;
-//       border-radius: 10px;
-//       border: 1px solid c.$c-base;
-//       cursor: pointer;
-//       @include m.mq(tab) {
-//         width: 136px;
-//         padding: 12px 52px;
-//         margin-left: 14px;
-//       }
-//     }
-//   }
-// }
-
-
-// &__menuToggle {
-//   position: absolute;
-//   top: 14px;
-//   right: 16px;
-
-//   @include m.mq(tab) {
-//     top: 18px;
-//     right: 26px;
-//   }
-//   @include m.mq(pc) {
-//     display: none;
-//   }
-//   button {
-//     appearance: none;
-//     padding: 0;
-//     border: none;
-//     outline: none;
-//     background: transparent;
-//     color: v.$brown;
-//     font-family: v.$font-Roboto;
-//     cursor: pointer;
-//     font-size: 20px;
-//     font-weight: bold;
-//     line-height: 26px;
-//     @include m.mq(tab) {
-//       font-size: 34px;
-//       line-height: 45px;
-//     }
-//   }
-// }
